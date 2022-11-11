@@ -1,4 +1,4 @@
-# :shopping_cart: 스프링 프로젝트
+쇼핑몰 프로젝트
 -------------------
 스프링과 리액트를 이용하여 만든 쇼핑몰 프로젝트 입니다.
 
@@ -11,7 +11,7 @@ css는 부투스 트랩, 디자인은 해외의 쇼핑몰 사이트를 참고 �
 Screenshots
 -----------------
 <div>
- <img width="200" src="/path/1.png" alt="쇼핑몰">
+ <img width="200" src="/imgs/1.png" alt="쇼핑몰">
 </div>
 
 ## :clipboard: 개발환경
