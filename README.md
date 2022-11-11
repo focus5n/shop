@@ -10,13 +10,15 @@ css는 부투스 트랩, 디자인은 해외의 쇼핑몰 사이트를 참고 �
 
 Screenshots
 -----------------
-<div>
- <img width="30%" height="30%" src="/imgs/1.png" alt="쇼핑몰">
- <img width="30%" height="30%" src="/imgs/2.png" alt="쇼핑몰">
- <img width="30%" height="30%" src="/imgs/3.png" alt="쇼핑몰">
- <img width="30%" height="30%" src="/imgs/4.png" alt="쇼핑몰">
- <img width="30%" height="30%" src="/imgs/5.png" alt="쇼핑몰">
-</div>
+ <img width="50%" height="50%" src="/imgs/1.png" alt="쇼핑몰">
+ <img width="50%" height="50%" src="/imgs/2.png" alt="쇼핑몰">
+ <img width="50%" height="50%" src="/imgs/3.png" alt="쇼핑몰">
+ <img width="50%" height="50%" src="/imgs/4.png" alt="쇼핑몰">
+
+Dependency
+-----------------
+ <img src="/imgs/diagram.png" alt="쇼핑몰">
+
 
 ## :clipboard: 개발환경
 * IntelliJ
