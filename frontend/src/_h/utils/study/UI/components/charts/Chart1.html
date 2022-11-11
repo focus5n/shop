@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Description of the page less than 150 characters">
+
+</head>
+
+<body>
+    <div class="flex flex-root flex-col">
+        <div class="flex flex-row flex-column-fluid">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const getData = (url) => {
+            return axios
+                .get(`${url}`)
+                .then((response) => response.data)
+        }
+
+        const res = getData('https://btf.bigdeo.com/wp-content/plugins/project-custom/api/graph/data.php')
+
+
+        res.then((r) => {
+            console.log(r)
+            const data = {
+                labels: [
+                    '디지털 에티켓',
+                    '디지털 리터러시',
+                    '저작권',
+                    '개인정보보호',
+                    '온라인 정체성',
+                    '사이버 폭력',
+                    '감정 및 공감'
+                ],
+                datasets: [{
+                    label: 'My Second Dataset',
+                    data: [r, 48, 40, 19, 96, 27, 100],
+                    fill: true,
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    pointBackgroundColor: 'rgb(54, 162, 235)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(54, 162, 235)'
+                }]
+            };
+
+            const config = {
+                type: 'radar',
+                data: data,
+                options: {
+                    elements: {
+                        line: {
+                            borderWidth: 3
+                        }
+                    }
+                },
+            };
+
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

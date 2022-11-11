@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/shop/review/get/11
+
+
+###
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}

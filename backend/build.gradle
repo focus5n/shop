@@ -1,0 +1,129 @@
+buildscript {
+    ext {
+        queryDslVersion = "5.0.0"
+    }
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.5.5"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE"
+    }
+}
+
+plugins {
+    id "com.ewerk.gradle.plugins.querydsl" version "1.0.10"
+}
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    group = 'com.hjk'
+    sourceCompatibility = 17
+
+    repositories {
+        mavenCentral()
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+    configurations {
+        implementationOnly {
+            extendsFrom annotationProcessor
+        }
+
+        developmentOnly
+        runtimeClasspath {
+            extendsFrom developmentOnly
+        }
+    }
+}
+
+subprojects {
+    dependencies {
+        //Boot
+        implementation 'org.springframework.boot:spring-boot-starter'
+        implementation 'org.springframework.boot:spring-boot-starter-web-services'
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-test'
+        implementation 'org.springframework.boot:spring-boot-devtools'
+        implementation 'org.springframework.boot:spring-boot-starter-validation'
+        implementation 'org.springframework.boot:spring-boot-starter-security'
+        implementation 'org.springframework.boot:spring-boot-starter-websocket'
+        implementation 'org.springframework.boot:spring-boot-starter-actuator'
+        implementation 'org.springframework.boot:spring-boot-starter-batch'
+        implementation 'org.springframework.boot:spring-boot-starter-webflux'
+        implementation 'org.springframework.security:spring-security-oauth2-client'
+        implementation 'org.springframework.security:spring-security-oauth2-jose'
+        implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+        implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+        //AOP
+        implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+        //Database
+        implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation 'mysql:mysql-connector-java'
+        implementation 'com.h2database:h2:1.4.194'
+        implementation 'commons-dbcp:commons-dbcp:1.4'
+
+        //Websocket
+        implementation "javax.websocket:javax.websocket-api:1.1"
+
+        //Json
+        implementation 'com.google.code.gson:gson'
+        implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+
+        //Lombok
+        implementation 'org.projectlombok:lombok'
+
+        //money
+        implementation 'org.joda:joda-money:1.0.1'
+
+        //Test
+        implementation 'junit:junit:4.13'
+
+        //Time
+        implementation 'joda-time:joda-time:2.10.1'
+
+        //Swagger
+        implementation 'io.springfox:springfox-swagger2:2.9.2'
+
+        //Common
+        implementation 'commons-io:commons-io:2.5'
+
+        //etc
+        implementation 'cn.hutool:hutool-all:5.8.0'
+
+        annotationProcessor('org.projectlombok:lombok')
+        testAnnotationProcessor('org.projectlombok:lombok')
+    }
+
+}
+
+subprojects.each { subproject -> evaluationDependsOn(subproject.path)}
+
+task allJar(type: Jar, dependsOn: subprojects.jar) {
+    baseName = 'hjk'
+    subprojects.each { subproject ->
+        from subproject.configurations.archives.allArtifacts.files.collect {
+            zipTree(it)
+        }
+    }
+}
+
+artifacts {
+    archives allJar
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.hjk.ShopApplication'
+    }
+}

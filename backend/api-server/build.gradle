@@ -1,0 +1,15 @@
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.hjk.ShopApplication'
+    }
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation project(':common')
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

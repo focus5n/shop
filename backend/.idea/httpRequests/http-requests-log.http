@@ -1,0 +1,391 @@
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T101238.200.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101223.200.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101059.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101057-1.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101057.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101056.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101054-1.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T101054.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/review/get/11
+
+<> 2022-11-10T100933.200.json
+
+###
+
+POST http://localhost:8080/api/shop/product/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T100925.200.json
+
+###
+
+GET http://localhost:8080/api/shop/product/review/get/11
+
+<> 2022-11-10T100914.200.json
+
+###
+
+GET http://localhost:8080/api/shop/product/review/get/11
+
+<> 2022-11-10T100912.200.json
+
+###
+
+GET http://localhost:8080/api/shop/product/review/get/11
+
+<> 2022-11-10T100844.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/review/get/11
+
+<> 2022-11-10T100842.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/11
+
+<> 2022-11-10T100831.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/get2
+
+<> 2022-11-10T100732.200.txt
+
+###
+
+GET http://localhost:8080/api/shop/test/get
+
+<> 2022-11-10T100651.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/get2
+
+<> 2022-11-10T100645.200.txt
+
+###
+
+GET http://localhost:8080/api/shop/product/get2
+
+<> 2022-11-10T100643.200.txt
+
+###
+
+GET http://localhost:8080/api/shop/test/get
+
+<> 2022-11-10T100535.404.json
+
+###
+
+GET http://localhost:8080/api/shop/test/get
+
+<> 2022-11-10T100534.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T095931.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T095928.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T095559.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T095555.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T095111.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T095106.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T095101.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T095058.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T095055.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T094832.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094826.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094824.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094822.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094816.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094600.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094542.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T094412-1.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T094412.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T094410.404.json
+
+###
+
+GET http://localhost:8080/api/shop/user/list
+
+<> 2022-11-10T094341.200.json
+
+###
+
+GET http://localhost:8080/api/shop/comment/get/11
+
+<> 2022-11-10T094312.404.json
+
+###
+
+GET http://localhost:8080/api/shop/comment/get/11
+
+<> 2022-11-10T094311.404.json
+
+###
+
+GET http://localhost:8080/api/shop/comment/get/11
+
+<> 2022-11-10T094310.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/11
+
+<> 2022-11-10T094222.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/list
+
+<> 2022-11-10T094159.200.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094148.404.json
+
+###
+
+POST http://localhost:8080/api/shop/review/save
+Content-Type: application/json
+
+{
+  "comment": "좋아요",
+  "userId": 1,
+  "productId": 11
+}
+
+<> 2022-11-10T094047.404.json
+
+###
+
+GET http://localhost:8080/api/shop/review/get/1
+
+<> 2022-11-10T094045.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/page/list?page=1&size=10&direction=DESC
+
+<> 2022-11-10T094036.200.json
+
+###
+

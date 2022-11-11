@@ -1,0 +1,10 @@
+{
+  "code": 200,
+  "message": "요청에 성공 했습니다",
+  "data": {
+    "userId": 1,
+    "userName": "hjk",
+    "comment": "좋아요",
+    "createdAt": "2022-11-10 10:12:38"
+  }
+}

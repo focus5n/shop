@@ -1,0 +1,13 @@
+GET http://localhost:8080/api/shop/likes/get/1
+
+###
+POST http://localhost:8080/api/shop/likes/save
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productId": 1
+}
+
+###
+DELETE http://localhost:8080/api/shop/likes/delete/7

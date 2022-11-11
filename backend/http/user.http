@@ -1,0 +1,47 @@
+GET http://localhost:8080/api/shop/user/list
+
+
+###
+POST http://localhost:8080/api/shop/user/register
+Content-Type: application/json
+
+{
+  "email": "these990712@gmail.com",
+  "password": "test1234",
+  "name": "hjk"
+}
+
+###
+POST http://localhost:8080/api/shop/user/login
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="email";
+Content-Type: text/plain
+
+these9907123@gmail.com
+
+--WebAppBoundary
+Content-Disposition: form-data; name="password";
+Content-Type: text/plain
+
+test1234
+
+###
+PATCH http://localhost:8080/api/shop/user/update/1
+Content-Type: application/json
+
+{
+  "name": "update",
+  "basicAddress": "서울시 가산동",
+  "detailAddress": "143-49"
+}
+
+###
+GET http://localhost:8080/api/shop/user/logout
+
+###
+PATCH  http://localhost:8080/api/shop/user/update/admin/2
+
+###
+DELETE  http://localhost:8080/api/shop/user/delete/1

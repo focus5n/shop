@@ -1,0 +1,558 @@
+// flex
+.col-10p {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+
+.col-13 {
+  flex: 0 0 13%;
+  max-width: 13%;
+}
+
+.col-15 {
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+.col-20 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.col-30 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.col-32 {
+  flex: 0 0 32%;
+  max-width: 32%;
+}
+
+.col-33 {
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+.col-40 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.col-45 {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.col-48 {
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+
+.col-50 {
+  flex: 1 0 50%;
+  max-width: 100%;
+}
+
+.col-60 {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.col-65 {
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+
+.col-66 {
+  flex: 0 0 66%;
+  max-width: 66%;
+}
+
+.col-70 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.col-80 {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+
+.col-85 {
+  flex: 1 0 85%;
+  max-width: 100%;
+}
+
+.col-87 {
+  flex: 0 0 87%;
+  max-width: 87%;
+}
+
+.col-90 {
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+
+.col-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* 플렉스 관련 */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+/* radius */
+.circle {
+  border-radius: 50%;
+}
+
+.round-4 {
+  border-radius: 4px;
+}
+
+.round-8 {
+  border-radius: 8px;
+}
+
+.round-12 {
+  border-radius: 12px;
+}
+
+.round-16 {
+  border-radius: 16px;
+}
+
+.round-20 {
+  border-radius: 20px;
+}
+
+.round-24 {
+  border-radius: 24px;
+}
+
+.round-9999 {
+  border-radius: 9999px;
+}
+
+/* 폰트관련 */
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* 선 관련 */
+.brd-none {
+  border: none;
+}
+
+.brd {
+  border: 1px solid transparent;
+}
+
+.brd-top {
+  border-top: 1px solid transparent !important;
+}
+
+.brd-left {
+  border-left: 1px solid transparent !important;
+}
+
+.brd-bottom {
+  border-bottom: 1px solid transparent;
+}
+
+.brd-right {
+  border-right: 1px solid transparent !important;
+}
+
+.brd-pri {
+  border-color: #3bb18f !important;
+}
+
+.brd-grey {
+  border-color: #343638 !important;
+}
+
+.brd-grey-dark {
+  border-color: rgb(44, 44, 44) !important;
+}
+
+.brd-grey-dark-2 {
+  border-color: #212228 !important;
+}
+
+.brd-white {
+  border-color: white;
+}
+
+.brd-light {
+  border-color: #eee !important;
+}
+
+.brd-aqua {
+  border-color: rgb(29, 155, 240);
+}
+
+/* 위치 */
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+/* 포지션 */
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+@media (max-width: 1230px) {
+  .mt-min-l-9 {
+    margin-top: 2.25rem !important;
+  }
+
+  .mb-min-l-8 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 786px) {
+  .mt-min-md-9 {
+    margin-top: 2.25rem !important;
+  }
+
+  .mb-min-md-8 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .mt-min-sm-9 {
+    margin-top: 2.25rem !important;
+  }
+
+  .mb-min-sm-8 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+.container,
+.container-fluid,
+.container-xxxxl,
+.container-xxxl,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 1.5rem);
+  padding-left: var(--bs-gutter-x, 1.5rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1600px) {
+  .container-xxxl,
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    //max-width: 1520px;
+  }
+  .container-xxxxl {
+    max-width: 2520px;
+  }
+}
+
+.table-sort:after {
+  opacity: 0;
+}
+
+.table-sort,
+.table-sort-asc,
+.table-sort-desc {
+  vertical-align: middle;
+}
+
+.table-sort:after,
+.table-sort-asc:after,
+.table-sort-desc:after {
+  position: relative;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  content: ' ';
+  bottom: auto;
+  right: auto;
+  left: auto;
+  margin-left: 0.5rem;
+}
+
+.table-sort-asc:after {
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 8' fill='%23565674'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.42111 2.06463C4.22088 1.96161 3.9637 1.9809 3.78597 2.12863L0.177181 5.12847C-0.046034 5.31402 -0.0602611 5.63049 0.145404 5.83532C0.351069 6.04015 0.698744 6.05578 0.921959 5.87023L4.14137 3.19406L7.06417 5.84414C7.27904 6.03896 7.62686 6.03835 7.84105 5.84278C8.05524 5.64721 8.05469 5.33073 7.83982 5.13591L4.54449 2.14806C4.50704 2.1141 4.46541 2.08629 4.42111 2.06463Z'/%3e%3c/svg%3e");
+}
+
+.table-sort-desc:after {
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 8' fill='%23565674'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.42111 5.93537C4.22088 6.03839 3.9637 6.0191 3.78597 5.87137L0.177181 2.87153C-0.046034 2.68598 -0.060261 2.36951 0.145404 2.16468C0.351069 1.95985 0.698744 1.94422 0.921959 2.12977L4.14137 4.80594L7.06417 2.15586C7.27904 1.96104 7.62686 1.96165 7.84105 2.15722C8.05524 2.35279 8.05469 2.66927 7.83982 2.86409L4.54449 5.85194C4.50704 5.8859 4.46541 5.91371 4.42111 5.93537Z'/%3e%3c/svg%3e");
+}
+
+.form-control.form-control-solid-light {
+  background-color: rgb(255, 255, 255, 0);
+  border-color: rgb(255, 255, 255);
+  color: #0f0f0f;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+//배경색
+.bg-light-info-white {
+  background-color: #ffffff00 !important;
+}
+
+.bg-transparent {
+  background-color: rgba(41, 39, 39, 0.3) !important;
+}
+
+//글씨색 
+.text-black {
+  color: #0a0a0d;
+}
+
+// 로그인
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+input:-webkit-autofill {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}

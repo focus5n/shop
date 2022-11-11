@@ -1,0 +1,21 @@
+GET http://localhost:8080/api/shop/order/get/myOrder?page=1&size=10&direction=DESC&userId=1
+
+###
+GET http://localhost:8080/api/shop/order/get/46
+
+
+###
+POST http://localhost:8080/api/shop/order/create
+Content-Type: application/json
+
+{
+  "productCount": 1,
+  "userId": 1,
+  "productId": 11
+}
+
+###
+DELETE http://localhost:8080/api/shop/order/refund/9
+
+###
+PATCH http://localhost:8080/api/shop/order/complete/27

@@ -1,0 +1,16 @@
+GET http://localhost:8080/api/shop/cart/get/1
+
+
+###
+POST http://localhost:8080/api/shop/cart/save
+Content-Type: application/json
+
+{
+  "productCount": 1,
+  "userId": 1,
+  "productId": 1
+}
+
+###
+DELETE http://localhost:8080/api/shop/cart/delete/1
+

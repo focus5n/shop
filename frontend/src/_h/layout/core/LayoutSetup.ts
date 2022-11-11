@@ -1,0 +1,258 @@
+import {
+  HAside,
+  HContent,
+  HFooter,
+  HHeader,
+  HToolbar,
+  HLayout,
+  HLayoutCSSClasses,
+  HLayoutHTMLAttributes,
+  HLayoutCSSVariables,
+  HPageTitle,
+} from './LayoutModels';
+import { LayoutConfig } from './LayoutConfig';
+
+const LAYOUT_CONFIG_KEY = 'LayoutConfig';
+
+export function getLayout(): HLayout {
+  const ls = localStorage.getItem(LAYOUT_CONFIG_KEY);
+  if (ls) {
+    try {
+      return JSON.parse(ls) as HLayout;
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  return LayoutConfig;
+}
+
+function setLayout(config: HLayout): void {
+  try {
+    localStorage.setItem(LAYOUT_CONFIG_KEY, JSON.stringify(config));
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+export function getEmptyCssClasses() {
+  return {
+    header: [],
+    headerContainer: [],
+    headerMobile: [],
+    headerMenu: [],
+    aside: [],
+    asideMenu: [],
+    asideToggle: [],
+    toolbar: [],
+    toolbarContainer: [],
+    content: [],
+    contentContainer: [],
+    footerContainer: [],
+    sidebar: [],
+    pageTitle: [],
+  };
+}
+
+export function getEmptyHTMLAttributes() {
+  return {
+    asideMenu: new Map(),
+    headerMobile: new Map(),
+    headerMenu: new Map(),
+    headerContainer: new Map(),
+    pageTitle: new Map(),
+  };
+}
+
+export function getEmptyCSSVariables() {
+  return {
+    body: new Map(),
+  };
+}
+
+export class LayoutSetup {
+  public static isLoaded: boolean = false;
+  public static config: HLayout = getLayout();
+  public static classes: HLayoutCSSClasses = getEmptyCssClasses();
+  public static attributes: HLayoutHTMLAttributes = getEmptyHTMLAttributes();
+  public static cssVariables: HLayoutCSSVariables = getEmptyCSSVariables();
+
+  private static initCSSClasses(): void {
+    LayoutSetup.classes = getEmptyCssClasses();
+  }
+
+  private static initHTMLAttributes(): void {
+    LayoutSetup.attributes = Object.assign({}, getEmptyHTMLAttributes());
+  }
+
+  private static initCSSVariables(): void {
+    LayoutSetup.cssVariables = getEmptyCSSVariables();
+  }
+
+  private static initLayout(config: HLayout): void {
+    Array.from(document.body.attributes).forEach((attr) => {
+      document.body.removeAttribute(attr.name);
+    });
+    document.body.setAttribute('style', '');
+    document.body.setAttribute('id', 'h_body');
+    if (config.main?.body?.backgroundImage) {
+      document.body.style.backgroundImage = `url('${config.main.body.backgroundImage}')`;
+    }
+
+    if (config.main?.body?.class) {
+      document.body.classList.add(config.main.body.class);
+    }
+  }
+
+  private static initHeader(config: HHeader): void {
+    LayoutSetup.classes.headerContainer.push(
+      config.width === 'fluid' ? 'container-fluid' : 'container',
+    );
+
+    if (config.fixed.desktop) {
+      document.body.classList.add('header-fixed');
+    }
+
+    if (config.fixed.tabletAndMobile) {
+      document.body.classList.add('header-tablet-and-mobile-fixed');
+    }
+  }
+
+  private static initToolbar(config: HToolbar): void {
+    if (!config.display) {
+      return;
+    }
+
+    document.body.classList.add('toolbar-enabled');
+    LayoutSetup.classes.toolbarContainer.push(
+      config.width === 'fluid' ? 'container-fluid' : 'container',
+    );
+
+    if (config.fixed.desktop) {
+      document.body.classList.add('toolbar-fixed');
+    }
+
+    if (config.fixed.tabletAndMobileMode) {
+      document.body.classList.add('toolbar-tablet-and-mobile-fixed');
+    }
+    const type = config.layout;
+    const typeOptions = config.layouts[type];
+    if (typeOptions) {
+      let bodyStyles: string = '';
+      if (typeOptions.height) {
+        bodyStyles += ` --h-toolbar-height: ${typeOptions.height};`;
+      }
+
+      if (typeOptions.heightAndTabletMobileMode) {
+        bodyStyles += ` --h-toolbar-height-tablet-and-mobile: ${typeOptions.heightAndTabletMobileMode};`;
+      }
+      document.body.setAttribute('style', bodyStyles);
+    }
+  }
+
+  private static initPageTitle(config: HPageTitle): void {
+    if (!config.display) {
+      return;
+    }
+
+    if (config.direction === 'column') {
+      this.classes.pageTitle.push('flex-column');
+      this.classes.pageTitle.push('align-items-start');
+    } else {
+      this.classes.pageTitle.push('align-items-center');
+      this.classes.pageTitle.push('flex-wrap');
+    }
+    this.classes.pageTitle.push('me-3');
+
+    if (config.responsive) {
+      this.classes.pageTitle.push('mb-5');
+      this.classes.pageTitle.push('mb-lg-0');
+
+      LayoutSetup.attributes.pageTitle.set('data-kt-swapper', true);
+      LayoutSetup.attributes.pageTitle.set('data-kt-swapper-mode', 'prepend');
+      LayoutSetup.attributes.pageTitle.set(
+        'data-kt-swapper-parent',
+        `{ default: '#kt_content_container', '${config.responsiveBreakpoint}': '${config.responsiveTarget}'}`,
+      );
+    }
+  }
+
+  private static initContent(config: HContent): void {
+    LayoutSetup.classes.contentContainer.push(
+      config.width === 'fluid' ? 'container-fluid' : 'container',
+    );
+  }
+
+  private static initAside(config: HAside): void {
+    if (!config.display) {
+      return;
+    }
+
+    document.body.classList.add('aside-enabled');
+    LayoutSetup.classes.aside.push(`aside-${config.theme}`);
+
+    if (config.fixed) {
+      document.body.classList.add('aside-fixed');
+    }
+
+    if (config.minimized) {
+      document.body.setAttribute('data-kt-aside-minimize', 'on');
+    }
+
+    if (config.hoverable) {
+      LayoutSetup.classes.aside.push('aside-hoverable');
+    }
+  }
+
+  private static initAsideMenu(config: HAside): void {
+ 
+  }
+
+  
+
+  private static initFooter(config: HFooter): void {
+    LayoutSetup.classes.footerContainer.push(
+      `container${config.width === 'fluid' ? '-fluid' : ''}`,
+    );
+  }
+
+  private static initConfig(config: HLayout): void {
+    if (config.main?.darkSkinEnabled) {
+      document.body.classList.add('dark-skin');
+    }
+
+    LayoutSetup.initLayout(config);
+    if (config.main?.type !== 'default') {
+      return;
+    }
+
+    LayoutSetup.initHeader(config.header);
+    LayoutSetup.initPageTitle(config.pageTitle as HPageTitle);
+    LayoutSetup.initToolbar(config.toolbar);
+    LayoutSetup.initContent(config.content);
+    LayoutSetup.initAside(config.aside);
+    LayoutSetup.initFooter(config.footer);
+    LayoutSetup.initAsideMenu(config.aside);
+  }
+
+  public static updatePartialConfig(fieldsToUpdate: Partial<HLayout>): HLayout {
+    const config = LayoutSetup.config;
+    const updatedConfig = { ...config, ...fieldsToUpdate };
+    LayoutSetup.initCSSClasses();
+    LayoutSetup.initCSSVariables();
+    LayoutSetup.initHTMLAttributes();
+    LayoutSetup.isLoaded = false;
+    LayoutSetup.config = updatedConfig;
+    LayoutSetup.initConfig(Object.assign({}, updatedConfig));
+    LayoutSetup.isLoaded = true; // remove loading there
+    return updatedConfig;
+  }
+
+  public static setConfig(config: HLayout): void {
+    setLayout(config);
+  }
+
+  public static bootstrap = (() => {
+    LayoutSetup.updatePartialConfig(LayoutSetup.config);
+  })();
+}

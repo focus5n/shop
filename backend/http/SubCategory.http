@@ -1,0 +1,11 @@
+
+###
+POST http://localhost:8080/api/shop/subCategory/create
+Content-Type: application/json
+
+{
+  "mainCategoryId": 3,
+  "name": "신발"
+}
+
+###

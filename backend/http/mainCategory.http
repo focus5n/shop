@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/shop/mainCategory/list
+
+
+###
+POST http://localhost:8080/api/shop/mainCategory/create
+Content-Type: application/json
+
+{
+  "name": "악세사리"
+}
+
+###

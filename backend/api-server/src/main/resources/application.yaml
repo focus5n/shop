@@ -1,0 +1,42 @@
+
+spring:
+  application:
+    name: Shop
+  datasource:
+    url: jdbc:mysql://localhost:3306/shop?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: star8903
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  jpa:
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+  data:
+    web:
+      pageable:
+        one:
+        one-indexed-parameters: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+
+
