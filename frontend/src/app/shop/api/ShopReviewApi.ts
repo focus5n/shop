@@ -3,7 +3,7 @@ import {Response} from "../helpers/query/QueryModels";
 import {Cart} from "../models/ShopCartModels";
 import {Review} from "../models/ShopReviewModel";
 
-const API_URL = 'http://13.209.148.183/:8080'
+const API_URL = 'http://13.209.148.183:8080'
 
 export const REVIEW_GET_URL = `${API_URL}/api/shop/review/get`
 export const REVIEW_SAVE_URL = `${API_URL}/api/shop/review/save`

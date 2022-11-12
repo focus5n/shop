@@ -2,7 +2,7 @@ import axios from 'axios'
 import {string} from "yup";
 import {PRODUCT_CATEGORY_LIST_URL} from "./ShopProductApi";
 
-const API_URL = 'http://13.209.148.183/:8080'
+const API_URL = 'http://13.209.148.183:8080'
 
 export const ORDER_GET_URL = `${API_URL}/api/shop/order/get`
 export const ORDER_CREATE_URL = `${API_URL}/api/shop/order/create`

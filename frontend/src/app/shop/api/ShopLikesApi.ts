@@ -4,7 +4,7 @@ import {AxiosResponse} from 'axios'
 import {Response} from '../helpers/query/QueryModels'
 import {Likes} from '../models/ShopLikesModels'
 
-const API_URL = 'http://13.209.148.183/:8080'
+const API_URL = 'http://13.209.148.183:8080'
 
 export const LIKE_LIST_URL = `${API_URL}/api/shop/likes/get`
 export const PRODUCT_LIKE_UP_URL = `${API_URL}/api/shop/likes/save`

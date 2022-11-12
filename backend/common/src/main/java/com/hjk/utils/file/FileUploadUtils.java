@@ -42,7 +42,7 @@ public class FileUploadUtils {
     }
 
     public static String upload(MultipartHttpServletRequest request) throws Exception {
-        File dir = ResourceUtils.getFile("classpath:static");
+        //File dir = ResourceUtils.getFile("classpath:static");
         ClassPathResource classPathResource = new ClassPathResource("static");
 
         String folderPath = classPathResource.getInputStream() + "/img/" + PRODUCT_IMAGE_FOLDER + "/";

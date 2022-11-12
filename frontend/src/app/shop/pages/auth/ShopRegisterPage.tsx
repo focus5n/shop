@@ -57,8 +57,8 @@ const ShopRegisterPage = () => {
                     return
                 }
 
-                setCurrentUser(user)
-                saveAuth(user)
+                setCurrentUser(user.data)
+                saveAuth(user.data)
             } catch (error) {
                 setSubmitting(false)
                 setLoading(false)
