@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.Iterator;
 import java.util.Objects;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -42,7 +43,9 @@ public class FileUploadUtils {
 
     public static String upload(MultipartHttpServletRequest request) throws Exception {
         File dir = ResourceUtils.getFile("classpath:static");
-        String folderPath = dir.getAbsolutePath() + "/img/" + PRODUCT_IMAGE_FOLDER + "/";
+        ClassPathResource classPathResource = new ClassPathResource("static");
+
+        String folderPath = classPathResource.getInputStream() + "/img/" + PRODUCT_IMAGE_FOLDER + "/";
 
         Iterator<String> iterator = request.getFileNames();
 

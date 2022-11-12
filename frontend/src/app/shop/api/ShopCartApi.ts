@@ -4,7 +4,7 @@ import {AxiosResponse} from 'axios'
 import {Response} from '../helpers/query/QueryModels'
 import {Cart} from '../models/ShopCartModels'
 
-const API_URL = 'http://localhost:8080'
+const API_URL = 'http://13.209.148.183/:8080'
 
 export const CART_LIST_URL = `${API_URL}/api/shop/cart/get`
 export const CART_DELETE_URL = `${API_URL}/api/shop/cart/delete`
