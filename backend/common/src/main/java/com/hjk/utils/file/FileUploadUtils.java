@@ -45,7 +45,7 @@ public class FileUploadUtils {
         //File dir = ResourceUtils.getFile("classpath:static");
         ClassPathResource classPathResource = new ClassPathResource("static");
 
-        String folderPath = classPathResource.getInputStream() + "/img/" + PRODUCT_IMAGE_FOLDER + "/";
+        String folderPath = "/docker" + "/img/" + PRODUCT_IMAGE_FOLDER + "/";
 
         Iterator<String> iterator = request.getFileNames();
 

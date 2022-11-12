@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopCartApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopCartApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopLikesApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopLikesApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopOrderApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopOrderApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopProductApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopProductApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopReviewApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopReviewApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopUserApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/api/ShopUserApi.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +190,7 @@
       <workItem from="1667899486939" duration="4028000" />
       <workItem from="1667910119238" duration="20468000" />
       <workItem from="1667972834212" duration="22130000" />
-      <workItem from="1668041624370" duration="14911000" />
+      <workItem from="1668041624370" duration="15755000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1668249533567</created>
