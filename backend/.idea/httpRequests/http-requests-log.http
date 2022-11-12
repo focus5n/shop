@@ -1,3 +1,9 @@
+GET http://localhost:8080/api/shop/order/get/myOrder?page=1&size=10&direction=DESC&userId=1
+
+<> 2022-11-12T193345.200.json
+
+###
+
 POST http://localhost:8080/api/shop/review/save
 Content-Type: application/json
 
@@ -380,12 +386,6 @@ Content-Type: application/json
 GET http://localhost:8080/api/shop/review/get/1
 
 <> 2022-11-10T094045.404.json
-
-###
-
-GET http://localhost:8080/api/shop/product/page/list?page=1&size=10&direction=DESC
-
-<> 2022-11-10T094036.200.json
 
 ###
 

@@ -4,7 +4,159 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="" />
+    <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/LikesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/MainCategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/ReviewController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/SubCategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/Controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/bin/main/com.hjk/ShopApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/config/querydslConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/enums/OrderStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/enums/ProductStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/enums/UserRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/enums/helpers/EnumPattern.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/enums/helpers/EnumPatternValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/CartException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/LikesException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/MainCategoryException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/OrderException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/ProductException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/ReviewException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/UserException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/common/BaseException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/common/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/common/ErrorDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/common/ValidException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/exception/handlers/ExceptionRestHandlers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Cart$CartBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Likes$LikesBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Likes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/MainCategory$MainCategoryBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/MainCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Orders$OrdersBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Orders.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Product$ProductBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Review$ReviewBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/Review.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/SubCategory$SubCategoryBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/SubCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/User$UserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/common/Base.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/common/CommonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/common/ErrorCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/common/ResponseCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/CartDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/CartDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/CartDto$saveRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/CartDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/LikesDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/LikesDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/LikesDto$saveRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/LikesDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/MainCategoryDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/MainCategoryDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/MainCategoryDto$createRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/MainCategoryDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/OrderDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/OrderDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/OrderDto$createRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/OrderDto$updateRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/OrderDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ProductDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ProductDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ProductDto$updateRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ProductDto$uploadRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ProductDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ReviewDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ReviewDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ReviewDto$saveRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/ReviewDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/SubCategoryDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/SubCategoryDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/SubCategoryDto$createRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/SubCategoryDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/UserDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/UserDto$Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/UserDto$loginRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/UserDto$registerRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/UserDto$updateRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/dto/UserDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/CommonPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/Link$LinkBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/Link.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/PageDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/PageRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/Pagination$PaginationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/model/page/Pagination.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/CartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/LikesRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/MainCategoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/OrderRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/ReviewRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/SubCategoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/config/SecurityBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/handler/CustomAccessDeniedHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/handler/CustomAuthenEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/handler/CustomLoginFailureHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/handler/CustomLoginSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/handler/CustomLogoutSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/model/CustomSecurityUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/security/service/CustomUserDetailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/LikesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/MainCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/ReviewService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/SubCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/search/OrderSearchService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/service/search/ProductSearchService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/utils/DateUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/utils/file/FileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/main/com/hjk/utils/file/FileUploadUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QCart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QLikes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QMainCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QOrders.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QReview.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QSubCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/QUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bin/querydsl/com/hjk/model/common/QBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094036.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/libs/api-server-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/libs/api-server-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/resources/main/static/img/product/263014_represent.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/resources/main/static/img/product/4e894c2b76dd4c8e9013aafc016047af_9366.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/resources/main/static/img/product/a691c5b0721920c683f5840e7b52947d_11440480089.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/resources/main/static/img/product/ed291e67-4618-49ec-8dda-2c2221a5df41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/resources/main/static/img/product/whitesneakers-2048px-4180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/hjk.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/hjk.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/libs/common-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/libs/common-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +248,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "spring.configuration.checksum": "f5e1dfa2d063ce113c036cd5ac99f441"
   },
@@ -148,25 +301,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+    <configuration name="order | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http/order.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="review | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http/review.http" requestIdentifier="#1" runType="Run single request">
@@ -184,11 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.order | #1" />
         <item itemvalue="HTTP Request.review | #2" />
         <item itemvalue="HTTP Request.review | #1" />
         <item itemvalue="Gradle.backend [classes]" />
         <item itemvalue="Gradle.backend [build]" />
-        <item itemvalue="Gradle.backend [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +340,7 @@
       <workItem from="1667899486939" duration="4028000" />
       <workItem from="1667910119238" duration="20468000" />
       <workItem from="1667972834212" duration="22130000" />
-      <workItem from="1668041624370" duration="11756000" />
+      <workItem from="1668041624370" duration="12715000" />
     </task>
     <servers />
   </component>
