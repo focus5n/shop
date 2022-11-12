@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "id": 88,
+      "orderNumber": "1275d9f6-e81a-4f1c-bc93-36380ee455af",
+      "orderName": "나이키 신발",
+      "requestMessage": "ㅇㅇ",
+      "userId": 1,
+      "productId": 33,
+      "productCount": 1,
+      "amount": 10000,
+      "basicAddress": "서울시",
+      "detailAddress": "가산동",
+      "createdAt": "2022-11-10 17:39:37",
+      "productImg": "http://localhost:8080/img/product/ed291e67-4618-49ec-8dda-2c2221a5df41.jpg",
+      "productCategory": "MAN-TOP",
+      "status": "COMPLETE"
+    }
+  ],
+  "payload": {
+    "pagination": {
+      "page": 1,
+      "startPage": 1,
+      "endPage": 1,
+      "total": 1,
+      "from": 1,
+      "to": 1,
+      "links": [
+        {
+          "url": "",
+          "label": "<<",
+          "page": -1,
+          "active": false
+        },
+        {
+          "url": "?page=1",
+          "label": "1",
+          "page": 1,
+          "active": true
+        },
+        {
+          "url": "",
+          "label": ">>",
+          "page": -1,
+          "active": false
+        }
+      ]
+    }
+  }
+}
