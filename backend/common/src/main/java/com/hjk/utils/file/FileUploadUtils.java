@@ -27,7 +27,7 @@ public class FileUploadUtils {
     }
 
     public static String getSaveFilePath(String img) {
-        return "http://localhost:8080" + "/img/" + PRODUCT_IMAGE_FOLDER + "/" + img;
+        return "/docker" + "/img/" + PRODUCT_IMAGE_FOLDER + "/" + img;
     }
 
 
