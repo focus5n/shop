@@ -1,7 +1,6 @@
 package com.hjk.security.handler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hjk.model.User;
 import com.hjk.model.common.CommonResult;
 import com.hjk.model.dto.UserDto;
 import com.hjk.service.UserService;

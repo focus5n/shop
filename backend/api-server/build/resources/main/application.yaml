@@ -39,4 +39,15 @@ spring:
 server:
   port: 8080
 
-
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIAV7PEI6ZJ555KALSG       #
+      secretKey: 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
+    s3:
+      bucket: shop-upload
+      dir: shop
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false

@@ -5,7 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/aws/AWSS3Properties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/aws/AWSS3Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094045.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094047.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094148.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094159.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094222.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-11-10T094310.404.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/LikesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/LikesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/MainCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/MainCategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/ReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/SubCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/SubCategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/classes/java/main/com/hjk/Controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/libs/api-server-plain.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/libs/api-server.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/resources/main/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/resources/main/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/LikesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/LikesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/MainCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/MainCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/SubCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/SubCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com.hjk/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/hjk.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/hjk.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/Product$ProductBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$Response$ResponseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$Response$ResponseBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$updateRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$updateRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$uploadRequestDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/model/dto/ProductDto$uploadRequestDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/security/handler/CustomLoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/security/handler/CustomLoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/utils/file/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/classes/java/main/com/hjk/utils/file/FileUploadUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/libs/common-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/libs/common-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/tmp/compileQuerydsl/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/tmp/compileQuerydsl/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hjk/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/hjk/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hjk/model/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/hjk/model/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hjk/security/handler/CustomLoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/hjk/security/handler/CustomLoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hjk/utils/file/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hjk/utils/file/FileUploadUtils.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +87,12 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/api-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/common">
           <activation />
         </task>
         <projects_view>
@@ -52,6 +124,54 @@
                 <item name="backend" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="querydsl" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="api-server" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="api-server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="api-server" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="api-server" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="backend" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
             <select />
@@ -93,12 +213,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "azul-18",
-    "last_opened_file_path": "/Users/hojong-gyu/Desktop/H/shop/backend",
+    "last_opened_file_path": "/Users/hojong-gyu/Desktop/H/shop/backend/api-server/src/main/java/com.hjk/aws",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "spring.configuration.checksum": "f5e1dfa2d063ce113c036cd5ac99f441"
   },
@@ -108,11 +231,16 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-server/src/main/java/com.hjk/aws" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.ShopApplication">
-    <configuration name="backend [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="backend:api-server [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -130,10 +258,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="backend [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="backend:api-server [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -141,7 +269,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="classes" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,13 +279,49 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="order | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http/order.http" requestIdentifier="#1" runType="Run single request">
+    <configuration name="backend:common [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="review | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http/review.http" requestIdentifier="#1" runType="Run single request">
+    <configuration name="backend:common [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="review | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http/review.http" index="2" requestIdentifier="#2" runType="Run single request">
+    <configuration name="user | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http/user.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -169,11 +333,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.order | #1" />
-        <item itemvalue="HTTP Request.review | #2" />
-        <item itemvalue="HTTP Request.review | #1" />
-        <item itemvalue="Gradle.backend [classes]" />
-        <item itemvalue="Gradle.backend [build]" />
+        <item itemvalue="HTTP Request.user | #1" />
+        <item itemvalue="Gradle.backend:common [build]" />
+        <item itemvalue="Gradle.backend:common [clean]" />
+        <item itemvalue="Gradle.backend:api-server [clean]" />
+        <item itemvalue="Gradle.backend:api-server [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +354,7 @@
       <workItem from="1667899486939" duration="4028000" />
       <workItem from="1667910119238" duration="20468000" />
       <workItem from="1667972834212" duration="22130000" />
-      <workItem from="1668041624370" duration="15755000" />
+      <workItem from="1668041624370" duration="25268000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1668249533567</created>

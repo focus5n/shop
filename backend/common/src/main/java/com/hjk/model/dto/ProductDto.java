@@ -1,9 +1,9 @@
 package com.hjk.model.dto;
 
+
 import com.hjk.enums.ProductStatus;
 import com.hjk.enums.helpers.EnumPattern;
 import com.hjk.utils.DateUtils;
-import com.hjk.utils.file.FileUploadUtils;
 import com.hjk.model.Product;
 import lombok.Builder;
 import lombok.Getter;
@@ -50,7 +50,7 @@ public class ProductDto {
 
         public Product toEntity() {
 
-            String path = FileUploadUtils.getSaveFilePath(img);
+            String path = "https://shop-upload.s3.ap-northeast-2.amazonaws.com/static/" + this.img;
 
             return Product.builder()
                     .name(this.name)

@@ -1,7 +1,0 @@
-{
-  "timestamp": "2022-11-10T00:43:10.139+00:00",
-  "status": 404,
-  "error": "Not Found",
-  "message": "No message available",
-  "path": "/api/shop/comment/get/11"
-}

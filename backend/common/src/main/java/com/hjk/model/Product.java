@@ -6,7 +6,6 @@ import com.hjk.exception.common.CustomException;
 import com.hjk.model.common.Base;
 import com.hjk.model.dto.ProductDto;
 import com.hjk.utils.DateUtils;
-import com.hjk.utils.file.FileUploadUtils;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -115,7 +114,7 @@ public class Product extends Base {
         this.status = request.getStatus() == null ? this.status : request.getStatus();
         this.mainCategory = request.getMainCategory() == null ? this.mainCategory : request.getMainCategory();
         this.subCategory = request.getSubCategory() == null ? this.subCategory : request.getSubCategory();
-        String path = FileUploadUtils.getSaveFilePath(request.getImg());
+        String path = "https://shop-upload.s3.ap-northeast-2.amazonaws.com/static/" + request.getImg();
         this.img = request.getImg() == null ? this.img : path;
     }
 

@@ -1,3 +1,39 @@
+GET http://localhost:8080/api/shop/user/list
+
+<> 2022-11-13T120030.200.json
+
+###
+
+GET http://localhost:8080/api/shop/user/list
+
+<> 2022-11-13T115713.404.json
+
+###
+
+GET http://localhost:8080/api/shop/user/list
+
+<> 2022-11-13T115710.404.json
+
+###
+
+GET http://localhost:8080/api/shop/user/list
+
+<> 2022-11-13T115705.404.json
+
+###
+
+GET http://localhost:8080/api/shop/product/list
+
+<> 2022-11-13T115418.401.json
+
+###
+
+GET http://localhost:8080/api/shop/user/list
+
+<> 2022-11-13T115403.401.json
+
+###
+
 GET http://localhost:8080/api/shop/order/get/myOrder?page=1&size=10&direction=DESC&userId=1
 
 <> 2022-11-12T193345.200.json
@@ -336,56 +372,6 @@ GET http://localhost:8080/api/shop/comment/get/11
 GET http://localhost:8080/api/shop/comment/get/11
 
 <> 2022-11-10T094311.404.json
-
-###
-
-GET http://localhost:8080/api/shop/comment/get/11
-
-<> 2022-11-10T094310.404.json
-
-###
-
-GET http://localhost:8080/api/shop/review/get/11
-
-<> 2022-11-10T094222.404.json
-
-###
-
-GET http://localhost:8080/api/shop/product/list
-
-<> 2022-11-10T094159.200.json
-
-###
-
-POST http://localhost:8080/api/shop/review/save
-Content-Type: application/json
-
-{
-  "comment": "좋아요",
-  "userId": 1,
-  "productId": 11
-}
-
-<> 2022-11-10T094148.404.json
-
-###
-
-POST http://localhost:8080/api/shop/review/save
-Content-Type: application/json
-
-{
-  "comment": "좋아요",
-  "userId": 1,
-  "productId": 11
-}
-
-<> 2022-11-10T094047.404.json
-
-###
-
-GET http://localhost:8080/api/shop/review/get/1
-
-<> 2022-11-10T094045.404.json
 
 ###
 
