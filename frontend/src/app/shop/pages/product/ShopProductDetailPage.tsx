@@ -59,6 +59,7 @@ const ShopProductDetailPage = () => {
                 <ShopUserReviewComponent
                     key={key}
                     reviewId={review.reviewId}
+                    userId={review.userId}
                     username={review.userName}
                     reviewContent={review.comment}
                     reviewDate={review.createdAt}

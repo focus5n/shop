@@ -4,10 +4,12 @@ import {reviewDelete} from "../../api/ShopReviewApi";
 import {toastSuccess} from "../../../../_h/utils/ToastUtils";
 import {useReviewQueryRequest} from "../../helpers/query/request/QueryReviewRequestProvider";
 import {getRandomInt} from "../../../../_h/utils/HUtils";
+import {ShopUseAuth} from "../../pages/auth/core/ShopAuth";
 
 type Props = {
     path: string
     reviewId: number
+    userId: number
     username: string
     reviewDate: string
     reviewContent: string
@@ -16,11 +18,12 @@ type Props = {
 const ShopUserReviewComponent: React.FC<Props> = ({
     path,
     reviewId,
+    userId,
     username,
     reviewDate,
     reviewContent
 }) => {
-
+    const {currentUser} = ShopUseAuth()
     const {setReview} = useReviewQueryRequest()
 
     const del = async (reviewId: number) => {
@@ -43,7 +46,15 @@ const ShopUserReviewComponent: React.FC<Props> = ({
                             <h2 className="fw-bold">{username}</h2>
                             <span className="text-dark-v2 fs-10">{reviewDate}</span>
                         </div>
-                        <div className="text-hover-success cursor-pointer" onClick={() => del(reviewId)}>삭제</div>
+                        {
+                            currentUser?.id === userId ?
+                                (
+                                    <div className="text-hover-success cursor-pointer" onClick={() => del(reviewId)}>삭제</div>
+                                ) :
+                                (
+                                    <></>
+                                )
+                        }
                     </div>
                     <p className="text-dark-v3 fw-bold fs-6">{reviewContent}</p>
                 </div>
