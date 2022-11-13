@@ -111,7 +111,7 @@ const ShopProductUploadPage = () => {
 
                 toastSuccess('상품이 등록 되었습니다')
                 setTimeout(() => {
-                    navigate('/productManagement')
+                    navigate('/shop/user/productManagement')
                 }, 1000);
             } catch (error) {
                 setSubmitting(false)
