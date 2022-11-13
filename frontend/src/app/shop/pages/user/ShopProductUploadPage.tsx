@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { productImgUpload, productUpload } from '../../api/ShopProductApi';
 import 'toastr/build/toastr.min.css';
 import { toastSuccess } from '../../../../_h/utils/ToastUtils';
+import {useNavigate} from "react-router-dom";
 
 const productSchema = Yup.object().shape({
     name: Yup.string()
@@ -61,6 +62,8 @@ const ShopProductUploadPage = () => {
     const [loading, setLoading] = useState(false)
     const [stock, setStock] = useState(1)
 
+    const navigate = useNavigate()
+
     const formik = useFormik({
         initialValues,
         validationSchema: productSchema,
@@ -108,7 +111,7 @@ const ShopProductUploadPage = () => {
 
                 toastSuccess('상품이 등록 되었습니다')
                 setTimeout(() => {
-                    window.location.href = 'productManagement'
+                    navigate('/productManagement')
                 }, 1000);
             } catch (error) {
                 setSubmitting(false)

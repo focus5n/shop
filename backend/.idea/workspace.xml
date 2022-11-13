@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/components/product/ShopProductManagementComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/components/product/ShopProductManagementComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/pages/user/ShopProductUploadPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/pages/user/ShopProductUploadPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +288,7 @@
       <workItem from="1667899486939" duration="4028000" />
       <workItem from="1667910119238" duration="20468000" />
       <workItem from="1667972834212" duration="22130000" />
-      <workItem from="1668041624370" duration="27798000" />
+      <workItem from="1668041624370" duration="28448000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1668249533567</created>
