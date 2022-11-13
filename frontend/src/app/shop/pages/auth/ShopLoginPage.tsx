@@ -31,7 +31,7 @@ const ShopLoginPage = () => {
                 const { data: user } = await login(values.email, values.password)
 
                 if (user.data === '해당 사용자가 존재하지 않습니다.') {
-                    setStatus("이메일잍 틀립니다")
+                    setStatus("이메일이 틀립니다")
                     setSubmitting(false)
                     setLoading(false)
                     return

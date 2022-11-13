@@ -1,11 +1,14 @@
 import React, { FC } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { productDelete, productGet } from '../../api/ShopProductApi'
-import { toastSuccess } from '../../../../_h/utils/ToastUtils';
+import {toastDanger, toastSuccess} from '../../../../_h/utils/ToastUtils';
 import { initialQueryState } from '../../helpers/query/QueryModels';
 import { getRandomInt } from '../../../../_h/utils/HUtils';
 import {useProductManageQueryRequest} from "../../helpers/query/request/QueryProductManageRequestProvider";
 import {useCartQueryRequest} from "../../helpers/query/request/QueryCartRequestProvider";
+import {current} from "immer";
+import {ShopUseAuth} from "../../pages/auth/core/ShopAuth";
+import toast from "../../../../_h/utils/study/UI/components/boot/js/src/toast";
 
 type Props = {
     id: number
@@ -36,6 +39,7 @@ const ShopProductManagementComponent: FC<Props> = ({
 
     const { updateState } = useProductManageQueryRequest()
     const {setCart} = useCartQueryRequest()
+    const {currentUser} = ShopUseAuth()
     const navigate = useNavigate()
     const get = async (id: number) => {
         const { data: product } = await productGet(id)
@@ -48,6 +52,11 @@ const ShopProductManagementComponent: FC<Props> = ({
 
     const del = async (id: number) => {
         const { data: response } = await productDelete(id)
+        if(currentUser?.email !== 'these990712@gmail.com') {
+            toastDanger('권한이 없습니다')
+            return
+        }
+
         if (response.code) {
             updateState({ delete: id, ...initialQueryState })
             setCart(getRandomInt())
