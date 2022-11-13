@@ -1,6 +1,5 @@
-import axios, {Axios, AxiosResponse} from 'axios'
+import axios, {AxiosResponse} from 'axios'
 import {Response} from "../helpers/query/QueryModels";
-import {Cart} from "../models/ShopCartModels";
 import {Review} from "../models/ShopReviewModel";
 
 const API_URL = 'http://13.209.148.183:8080'

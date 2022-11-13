@@ -41,7 +41,6 @@ const QueryCartResponseProvider: FC<Props> = ({ children }) => {
         {enabled:!!user?.id, cacheTime: 0 }
     )
 
-    console.log(response)
 
     return (
         <QueryCartResponseContext.Provider value={{ isLoading: isFetching, refetch, response, query }}>
