@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/components/user/ShopUserReveiwComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/components/user/ShopUserReveiwComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/shop/pages/product/ShopProductDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/shop/pages/product/ShopProductDetailPage.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="3e237dfa-3b9e-48ee-beba-6de8e64c5b68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,7 +286,7 @@
       <workItem from="1667899486939" duration="4028000" />
       <workItem from="1667910119238" duration="20468000" />
       <workItem from="1667972834212" duration="22130000" />
-      <workItem from="1668041624370" duration="28886000" />
+      <workItem from="1668041624370" duration="29517000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1668249533567</created>

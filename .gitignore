@@ -23,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /frontend/node_modules
-/frontend/.idea
+/frontend/.ide
+/backend/api-server/src/main/resources/application.yamla
 /.idea
