@@ -51,11 +51,12 @@ const ShopProductManagementComponent: FC<Props> = ({
     }
 
     const del = async (id: number) => {
-        const { data: response } = await productDelete(id)
         if(currentUser?.email !== 'these990712@gmail.com') {
             toastDanger('권한이 없습니다')
             return
         }
+
+        const { data: response } = await productDelete(id)
 
         if (response.code) {
             updateState({ delete: id, ...initialQueryState })
